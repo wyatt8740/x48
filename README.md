@@ -1,5 +1,19 @@
 x48 0.6.4, an HP48 emulator, with a tweak to compile in 2018 on my linux box.
 
+To compile it:
+
+```
+./autogen.sh
+./configure
+make
+```
+
+Optional:
+```
+make install
+```
+
+
 Original README:
 
 ```
