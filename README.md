@@ -13,6 +13,28 @@ Optional:
 make install
 ```
 
+Getting this thing to actually run was an endeavour for me.
+
+First, you need to make the directory `~/.hp48`.
+Put your ROM dump (HP48SX or HP48GX) in `~/.hp48/`, and name it `rom.dump`.
+I had to (on the first run) run x48 as:
+
+    x48 -initialize -reset -rom ~/.hp48/rom.dump
+
+Then I hit the on button a few times, got no reply, and closed the emulator.
+
+I then re-opened it using just the command `x48` with no additional arguments,
+tried hitting 'ON' again, and it suddenly worked. Just getting it initialized
+was the hard part.
+
+If you hit segfaults, delete all the files except `rom.dump` in `~/.hp48` and
+redo the initialization step.
+
+I have tested this program to work (with the above caveats relating to the first
+run) on Amd64 (x86_64) and PowerPC (32 bit) architectures.
+
+The systems I used for testing were a Lenovo ThinkPad X201 and an Apple
+PowerBook G4 aluminum 1.33Ghz - both running Debian Sid (unstable).
 
 Original README:
 
