@@ -1,5 +1,9 @@
 x48 0.6.4, an HP48 emulator, with a tweak to compile in 2018 on my linux box.
 
+Requires `xfonts-base` (in debian) to be installed for all of the default
+fonts to be present. The package name may differ by platform, but you
+are looking for the bitmap fonts.
+
 To compile it:
 
 ```
