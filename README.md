@@ -1,11 +1,17 @@
 x48 0.6.4, an HP48 emulator, with a tweak to compile in 2018 on my linux box.
 
+Update: It is still building and running properly on Debian Sid in 2022.
+
 Requires `xfonts-base` (in debian) to be installed for all of the default
 fonts to be present. The package name may differ by platform, but you
 are looking for the bitmap fonts.
 
 Apparently the CLI arguments `-connFont fixed`, for example, can side-step the
 missing helvetica issue, too.
+
+After installing xfonts-base, I have heard you may need to reload X. There's
+probably a way around this, but that or a reboot should help out. I don't
+remember needing to do this, but I did it a long time ago now.
 
 To compile it:
 
